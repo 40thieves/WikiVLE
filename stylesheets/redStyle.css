@@ -1,0 +1,379 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Arial, sans-serif;
+}
+
+/* Fonts */
+
+h1 {
+	font-size: 2em;
+}
+
+/* Header section */
+
+header {
+	/* CSS Gradient */
+	background: #B80103; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B80103', endColorstr='#FFFFFF'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#B80103), to(#FFF)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #B80103,  #FFF); /* for firefox 3.6+ */ 
+	
+	height: 115px;
+	width: 100%;
+}
+
+header #logo {
+	float: left;
+	margin: 15px;
+}
+
+header #right {
+	float: right;
+	margin-top: 5px;
+	margin-right: 30px;
+}
+
+header #login li {
+	display: inline;
+	margin: 0px 5px;
+}
+
+.search {
+	margin-top: 15px;
+	border: 1px solid #AAA;
+	background: white;
+	padding-right: 2px;
+	width: 185px;
+}
+
+.searchButton:hover {
+	cursor: pointer;
+}
+
+.search .searchButton {
+	border: none;
+	background: white;
+	position: relative;
+	top: 1px;
+
+}
+
+.search input[type="search"] {
+	-webkit-appearance: none;
+    border: none;
+    padding: 4px;
+}
+
+header #login {
+	margin-left: 70px;
+}
+
+/* Sidebar section */
+
+nav {
+	margin-top: 30px;
+	margin-left: -160px;
+	width: 140px;
+	float: left;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav #navigation, nav #tools {
+	padding: 5px 0px;
+}
+
+nav .menuIndent {
+	padding-left: 10px;
+}
+
+nav #tools h4 {
+	font-weight: normal;
+}
+
+nav #tools:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+nav #tools h4 {
+    background: url(../img/sideArrow.png);
+    background-repeat: no-repeat;
+    padding-left: 22px;
+}
+
+nav #tools .open {
+	background: url(../img/downArrow.png);
+    background-repeat: no-repeat;
+    padding-left: 22px;
+}
+
+/* Edit/create form */
+
+form {
+	padding: 5px;
+}
+
+form fieldset {
+	border: none;
+	padding: 5px;
+}
+
+form legend {
+	border-bottom: ;
+}
+
+form p {
+	padding: 5px 0px;
+}
+
+form textarea {
+	width: 99%;
+	padding: 5px;
+}
+
+form legend {
+    border-bottom: 1px dotted #AAA;
+}
+
+form input[type="text"] {
+    height: 20px;
+    width: 300px;
+    margin-left: 10px;
+}
+
+/* Home - featured page */
+
+#featured {
+	border: 1px dotted #AAA;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#featured .meta {
+	margin-left: -6px;
+}
+
+#list {
+	border: 1px dotted #AAA;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+
+#list .list {
+	padding-top: 3px;
+}
+
+
+/* Content section */
+
+.content {
+	margin-left: 150px;
+	padding: 20px;
+}
+
+#pageTitle {
+	padding: 10px 0px 2px;
+	border-bottom: 1px solid #AAA;
+	margin-bottom: 5px;
+}
+
+.subsectionheader {
+    padding-top: 2px;
+}
+
+.editlink {
+	float: right;
+	font-size: 12px;
+	padding-top: 7px;
+	font-weight: normal;
+
+}
+
+.meta {
+	font-size: 11px;
+	margin-left: -16px;
+}
+
+/* Content section - notes subsection */
+
+article {
+	padding: 10px;
+}
+
+.content p {
+	padding: 5px;
+}
+
+.content ul, .content ol {
+	padding-left: 20px;
+}
+
+
+/* Content section - history */
+table {
+	text-align: left;
+}
+
+th:nth-of-type(2), td:nth-of-type(2) {
+	padding-right: 100px;
+	padding-left: 10px;
+}
+
+/* Content section - Preview */
+
+.content #preview {
+	border: 1px dotted #AAA;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.content #previewHeader {
+	border-bottom: 1px solid #AAA;
+	margin-bottom: 10px;
+	color: red;
+}
+
+.content #previewHeader a {
+	text-decoration: none;
+}
+
+/* Content section - cite */
+
+.content #cite {
+	border: 1px dotted #AAA;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.content #cite #box {
+	
+}
+
+/* Admin section */
+
+.admin {
+	margin-left: 150px;
+	padding: 20px;
+}
+
+.admin article {
+	padding: 5px 10px;
+	margin-top: 3px;
+	border: 1px dotted #AAA;
+	border-radius: 10px;
+}
+
+.admin article:first-of-type {
+	border: none;
+}
+
+.admin p {
+	padding: 5px;
+}
+
+.admin table {
+	padding: 10px;
+}
+
+.admin table form {
+	padding: 2px;
+}
+
+
+/* Input and button styling */
+
+button {
+	padding: 2px 5px;
+}
+
+input[type="submit"] {
+	padding: 2px 5px;
+}
+
+/* Login section */
+
+input[type="password"] {
+	height: 20px;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.invalid {
+	border: 1px solid red;
+}
+
+/* Markdown cheatsheet styling */
+
+#cheatsheetButton {
+     position: fixed;
+     right: -70px;
+     top: 265px;
+     display: block;
+     width: 154px;
+     height: 20px;
+     text-indent: 2px;
+     background-color: #B80103;
+     border: 1px dotted black;
+
+	-webkit-transform: rotate(-90deg); 
+	-moz-transform: rotate(-90deg); 
+	-ms-transform: rotate(-90deg); 
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+#cheatsheetButton:hover {
+	cursor: pointer;
+}
+
+#cheatsheet {
+    float: right;
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 250px;
+    height: 550px;
+    font-size: 12px;
+}
+
+#cheatsheet h1 {
+	font-size: 20px;
+}
+
+#cheatsheet h2 {
+    font-size: 18px;
+    padding-top: 5px;
+
+}
+
+/* Footer section */
+
+footer {
+	font-size: 11px;
+	height: 20px;
+	padding-top: 5px;
+	margin: 0px 20px 0px 150px;
+}
+
+#footerleft {
+	float: left;
+}
+
+#footerright {
+	float: right;
+}
+

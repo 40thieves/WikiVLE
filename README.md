@@ -1,6 +1,6 @@
 # WikiVLE #
 
-WikiVLE is a Virtual Learning Environment that I built for my Web Client & Server coursework in Winter/Spring 2012. To install 
+WikiVLE is a Virtual Learning Environment that I built for my Web Client & Server coursework in Winter/Spring 2012. 
 
 ## Installation ##
 
